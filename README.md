@@ -1,6 +1,6 @@
 
 # Password Hack
-Inspired by the one in the Berlin Spy Museum - https://www.deutsches-spionagemuseum.de/.
+Inspired by the one in the Berlin Spy Museum - https://www.deutsches-spionagemuseum.de/
 ## Critical arguments
 - The time displayed is not the **time it takes to actually hack your _account_**.
 	- Different hacking scenarios have different limitations: computer login, facebook account, ...
@@ -36,3 +36,4 @@ Inspired by the one in the Berlin Spy Museum - https://www.deutsches-spionagemus
 - Input
 	- Obfuscate password on input - https://stackoverflow.com/questions/24037545/how-to-hide-password-in-the-nodejs-console
 	- CLI input password
+- ... see more in code comments
