@@ -19,10 +19,10 @@ let pws = [];
 // TODO: allow to pass in password directly
 const letters = 'abcdefghijklmnopqrstuvwxyz'.split('');
 const lettersUpper =
-	letters
-	.map((letter) => {
-		return letter.toUpperCase();
-	});
+  letters
+  .map((letter) => {
+    return letter.toUpperCase();
+  });
 const numbers = '1234567890'.split('');
 const specialChars = '§=±!@#$%^&*()_+[];\\\`,./{}:"|~<>?'.split('');
 
@@ -36,38 +36,38 @@ const rl = readline.createInterface({
 });
 
 rl.question(`What is your password?`, (userPassword) => {
-	console.log(`This is your password: ${userPassword}`);
+  console.log(`This is your password: ${userPassword}`);
 
-	/**
-	 * ALGORITHM
-	 */
-	let hackedPassword;
+  /**
+   * ALGORITHM
+   */
+  let hackedPassword;
 
-	console.time('pw');
+  console.time('pw');
 
-	for (let l = 0; l < letters.length; l++) {
-		const letter = letters[l];
-		if (userPassword === letter) {
-			hackedPassword = letter;
-			break;
-		}
-	}
+  for (let l = 0; l < letters.length; l++) {
+    const letter = letters[l];
+    if (userPassword === letter) {
+      hackedPassword = letter;
+      break;
+    }
+  }
 
-	/**
-	 * OUTPUT
-	 */
+  /**
+   * OUTPUT
+   */
 
-	console.timeEnd('pw');
-	// TODO: 	possible to get time without printing it to the console directly?
-	//				this way we could present it more
-	//				https://stackoverflow.com/questions/10617070/how-to-measure-execution-time-of-javascript-code-with-callbacks
+  console.timeEnd('pw');
+  // TODO:  possible to get time without printing it to the console directly?
+  //        this way we could present it more
+  //        https://stackoverflow.com/questions/10617070/how-to-measure-execution-time-of-javascript-code-with-callbacks
 
-	if (hackedPassword) {
-		console.log(`hacked your password ${hackedPassword}`);
-	}
-	else {
-		console.log(`did not hack password`);
-	}
+  if (hackedPassword) {
+    console.log(`hacked your password ${hackedPassword}`);
+  }
+  else {
+    console.log(`did not hack password`);
+  }
 
   rl.close();
 });
