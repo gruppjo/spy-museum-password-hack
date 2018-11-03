@@ -1,8 +1,11 @@
 /**
  * DEPENDENCIES
  */
+
 // TODO: maybe use chalk for prettier input / output
-const readline = require('readline'); // https://nodejs.org/docs/latest-v10.x/api/readline.html
+const readline = require('readline');
+// readline API - https://nodejs.org/docs/latest-v10.x/api/readline.html
+// readline-sync (alternative) - https://www.npmjs.com/package/readline-sync
 
 
 /**
@@ -57,6 +60,7 @@ rl.question(`What is your password?`, (userPassword) => {
 	console.timeEnd('pw');
 	// TODO: 	possible to get time without printing it to the console directly?
 	//				this way we could present it more
+	//				https://stackoverflow.com/questions/10617070/how-to-measure-execution-time-of-javascript-code-with-callbacks
 
 	if (hackedPassword) {
 		console.log(`hacked your password ${hackedPassword}`);
