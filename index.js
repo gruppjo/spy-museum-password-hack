@@ -1,23 +1,4 @@
 /**
- * Todos:
- * 	- Features
- * 		- show scrambling text while doing it so it looks like hacking
- * 	- Options
- * 		- Options for includeLettersUpper, includeNumbers, ... (CLI inputs?)
- * 	- Algorithm: how to combine all characters with previous characters?
- * 		- recursion?
- * 		- save already checked in array?
- * 		- password check on every new set or do later with array.find
- *	- Character Generation:
- * 		- better way to generate them?
- * 		- include unicode?
- * 	- Input
- * 		- Obfuscate password on input - https://stackoverflow.com/questions/24037545/how-to-hide-password-in-the-nodejs-console
- * 		- CLI input password
- */
-
-
-/**
  * DEPENDENCIES
  */
 // TODO: maybe use chalk for prettier input / output
